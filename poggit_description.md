@@ -35,7 +35,7 @@ All detection thresholds are configurable in their respective check classes:
 - `VPNCheck.php` - VPN/proxy IP ranges
 
 ### Permissions
-- `anticheatatlite.bypass` - Allows players to bypass all anti-cheat checks (default: op)
+- `anticheatlite.bypass` - Allows players to bypass all anti-cheat checks (default: op)
 
 ## Technical Details
 
