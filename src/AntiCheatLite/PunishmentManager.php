@@ -28,7 +28,7 @@ class PunishmentManager {
         $this->offenses[$name] = $count + 1;
         $offenseCount = $this->offenses[$name];
         $banDate = date("Y-m-d H:i:s");
-        $appeal = TextFormat::GRAY . "Appeal: Contact @lynottt on Discord";
+        $appeal = TextFormat::GRAY . "Appeal at " . TextFormat::AQUA . "https://discord.gg/yourservername";
 
         switch ($offenseCount) {
             case 1:
