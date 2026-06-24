@@ -35,7 +35,7 @@ class Main extends PluginBase implements Listener {
         $ip = $player->getNetworkSession()->getIp();
 
         if (VPNCheck::isVPN($ip)) {
-            $banList = $this->getServer()->getNetwork()->getBanManager()->getIpBans();
+            $banList = $this->getServer()->getIPBans();
             $banList->addBan($ip, "VPNs are not allowed", null, "AntiCheatLite");
             $player->kick("VPNs are not allowed.");
         }

@@ -77,7 +77,7 @@ class PunishmentManager {
             TextFormat::YELLOW . "Ban Date: $banDate\n" .
             TextFormat::GOLD . "This ban will be lifted on: " . $unbanDate->format("Y-m-d H:i:s") . "\n" .
             $appeal;
-        $banList = Server::getInstance()->getNetwork()->getBanManager()->getNameBans();
+        $banList = Server::getInstance()->getNameBans();
         $banList->addBan($name, $banReason, $unbanDate, "AntiCheatLite");
         Server::getInstance()->getLogger()->warning("[AntiCheat] $name temp banned for $reason");
         $player->kick($banReason);
@@ -88,7 +88,7 @@ class PunishmentManager {
      */
     private function permBan(Player $player, string $name, string $reason, string $appeal): void {
         $banReason = "Permanently banned by AntiCheat ($reason)\n" . $appeal;
-        $banList = Server::getInstance()->getNetwork()->getBanManager()->getNameBans();
+        $banList = Server::getInstance()->getNameBans();
         $banList->addBan($name, $banReason, null, "AntiCheatLite");
         Server::getInstance()->getLogger()->warning("[AntiCheat] $name perm banned for $reason");
         $player->kick($banReason);
