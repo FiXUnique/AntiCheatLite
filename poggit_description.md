@@ -34,6 +34,9 @@ All detection thresholds are configurable in their respective check classes:
 - `KillauraCheck.php` - Aim accuracy threshold (default: 0.3 dot product)
 - `VPNCheck.php` - VPN/proxy IP ranges
 
+### Permissions
+- `anticheatatlite.bypass` - Allows players to bypass all anti-cheat checks (default: op)
+
 ## Technical Details
 
 ### Performance Optimized
