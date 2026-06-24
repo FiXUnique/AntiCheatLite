@@ -1,0 +1,10 @@
+name: AntiCheatLite
+main: AntiCheatLite\Main
+version: 1.1.0
+api: 5.0.0
+author: Lynott/FiXUnique
+description: A lightweight anti-cheat plugin for PocketMine-MP servers
+permissions:
+  anticheatlite.bypass:
+    description: Bypass all anti-cheat checks
+    default: op
